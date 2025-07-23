@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IP Address Viewer</title>
+</head>
+<body>
+  <h1>Network Addresses</h1>
+  <ul id="address-list"></ul>
+
+  <script>
+    fetch('http://localhost:3000/addresses')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('address-list');
+        data.forEach(addr => {
+          const item = document.createElement('li');
+          item.textContent = `IP: ${addr.ip}, Netmask: ${addr.netmask}`;
+          list.appendChild(item);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  </script>
+</body>
+</html>
