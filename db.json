@@ -1,20 +1,119 @@
 {
-  "addresses": [
-     {
-      "ip": "172.16.0.1",
-      "netmask": "255.255.255.0"
+  "intro": {
+    "duration": "0:15",
+    "background_music": {
+      "file": "upbeat-tech-music.mp3",
+      "volume": 0.6,
+      "fade_in": "1s",
+      "fade_out": "1s"
     },
-    {
-      "ip": "172.16.0.2",
-      "netmask": "255.255.255.0"
-    },
-    {
-      "ip": "172.16.0.3",
-      "netmask": "255.255.255.0"
-    },
-    {
-      "ip": "172.16.0.4",
-      "netmask": "255.255.255.0"
+    "scenes": [
+      {
+        "time_range": "0s-3s",
+        "visuals": {
+          "type": "logo_animation",
+          "asset": "google_developers_logo.png",
+          "animation": "fade_in_zoom",
+          "background_color": "#ffffff",
+          "position": "center"
+        },
+        "text": {
+          "content": "Google Developer Groups On Campus - UICT",
+          "font": "Google Sans",
+          "size": "32px",
+          "color": "#202124",
+          "animation": "fade_in_bottom"
+        }
+      },
+      {
+        "time_range": "3s-6s",
+        "visuals": {
+          "type": "text_slide",
+          "background_gradient": ["#4285F4", "#0F9D58"],
+          "animation": "slide_left"
+        },
+        "text": {
+          "content": "Learn. Connect. Grow.",
+          "font": "Google Sans",
+          "size": "36px",
+          "color": "#ffffff",
+          "animation": "typewriter",
+          "emphasis": ["Learn", "Connect", "Grow"]
+        }
+      },
+      {
+        "time_range": "6s-10s",
+        "visuals": {
+          "type": "grid_animation",
+          "assets": [
+            "coding.png",
+            "community.png",
+            "events.png"
+          ],
+          "background_color": "#ffffff",
+          "layout": "3-column",
+          "animation": "zoom_bounce"
+        },
+        "text": {
+          "content": "Code your future with us!",
+          "font": "Google Sans",
+          "size": "28px",
+          "color": "#0F9D58",
+          "animation": "pop_in"
+        }
+      },
+      {
+        "time_range": "10s-13s",
+        "visuals": {
+          "type": "social_links",
+          "background_color": "#f1f3f4",
+          "icons": [
+            {
+              "platform": "YouTube",
+              "link": "https://www.youtube.com/@GDG-UICT",
+              "icon_file": "youtube_icon.png"
+            },
+            {
+              "platform": "linkedin",
+              "link": "https://www.linkedin.com/company/google-developers-students-club-uict",
+              "icon_file": "linkedin_icon.png"
+            }
+          ],
+          "animation": "fade_in_scale"
+        },
+        "text": {
+          "content": "Follow us & stay updated!",
+          "font": "Google Sans",
+          "size": "20px",
+          "color": "#202124",
+          "animation": "fade_in"
+        }
+      },
+      {
+        "time_range": "13s-15s",
+        "visuals": {
+          "type": "outro_screen",
+          "background_color": "#ffffff",
+          "animation": "fade_out"
+        },
+        "text": {
+          "content": "Subscribe • Like • Share",
+          "font": "Google Sans",
+          "size": "24px",
+          "color": "#4285F4",
+          "animation": "pulse"
+        }
+      }
+    ],
+    "branding": {
+      "logo": "google_developers_logo.png",
+      "colors": {
+        "primary": "#4285F4",
+        "secondary": "#0F9D58",
+        "accent": "#F4B400",
+        "text_primary": "#202124"
+      },
+      "fonts": ["Google Sans", "Roboto"]
     }
-  ]
+  }
 }
